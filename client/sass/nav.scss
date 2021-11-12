@@ -1,0 +1,78 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    a{
+        text-decoration: none;
+        color: black;
+        padding-left: 1rem;
+    }
+
+    a:active, a:visited{
+        color: black;
+    }
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 12px 32px 0px #ffffff, 0 5px 3px -3px rgba(0,0,0,0.43);
+    .nav-left{
+        display: flex;
+        align-items: center;
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding: 0;
+    
+            .brand-logo{
+                width: 10rem;
+            }
+    
+            .nav-desktop{
+                padding-left: 2rem;
+            }
+    
+        }
+    }
+
+    .nav-right{
+        display: flex;
+        align-self: center;
+        cursor: pointer;
+        background-color: rgba(177, 177, 177, 0.575);
+        padding: 1.5rem 2rem;
+
+        .cart-logo{
+            width: 1.5rem;
+            color: red;
+            padding-right: 0.5rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width:576px) {
+    header{
+        display: none;
+    }
+    nav{
+        .nav-left{
+            ul{
+                .brand-logo{
+                    width: 80px;
+                }
+
+                .nav-desktop{
+                    display: none;
+                }
+            }
+        }
+
+        .nav-right{
+            padding: 1rem;
+        }
+    }
+    
+}

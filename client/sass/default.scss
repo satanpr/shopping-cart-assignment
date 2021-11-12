@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$maroon: rgb(185, 4, 4);
+$white: #ffffff;
+$black: #000000;
+$gray: #dddddd;
+$font-small:0.8rem;
+$font-reg: 1rem;
+$font-lg: 1.2rem;
+$font-xl: 1.5rem;
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+}
+
+// html,body{
+//     overflow-x: hidden !important;
+// }
+
+h1, h2, h3, h4, ul,p{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    line-height: 1.5;
+    padding: 0.5rem 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover, a:active, a:visited{
+    color: $black;
+}
+
+h1,h2,h3,h4{
+    line-height: 1.5;
+    // padding: 0.5rem;
+}
+img{
+    width: 100%;
+}
+
+.title{
+    font-weight: 700;
+}
+
+.disabled{
+    background-color: #858585 !important;
+    cursor: no-drop !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.font-sm{
+    font-size: $font-small;
+}
+
+.font-reg{
+    font-size: $font-reg;
+}
+
+.font-lg{
+    font-size: $font-lg;
+}
+
+.font-xl{
+    font-size: $font-xl;
+}
+
+@media screen and (min-width:1200px) {
+    .tablet{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .desktop{
+        display: none;
+    }
+}
+

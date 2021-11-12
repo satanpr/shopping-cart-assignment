@@ -1,0 +1,31 @@
+@import 'default';
+@import 'container';
+@import 'form';
+@import 'nav';
+
+@media screen and (min-width:768px) {
+    main{
+        display: flex;
+    
+        .left{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            padding: 3rem 3rem;
+            .signup-desc{
+    
+            }
+        }
+    
+        .right{
+            flex:1
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    main{
+        flex-direction: column;
+    }
+}
+

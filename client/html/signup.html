@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="./login.html">Sign In</a>
+            <a href="#">Register</a>
+        </header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li class="nav-item">
+                        <img class="brand-logo" src="../../static/images/logo_2x.png" alt="Sabka Bazaar Logo">
+                    </li>
+                    <li class="nav-item nav-desktop">
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item nav-desktop">
+                        <a href="#">Products</a>
+                    </li>
+            </div>
+
+            <div class="nav-right">
+                <img class="cart-logo" src="../../static/images/cart.svg" alt="Cart Logo">
+                <span id="cart-item-count">0 items</span>
+            </div>
+            
+        </nav>
+        <main>
+            <div class="left">
+                <div class="signup-desc">
+                    <h1>Signup</h1>
+                    <p>We do not share your personal details with anyone.</p>
+                </div>
+                
+            </div>
+
+            <div class="right">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" name="firstname" required id="firstname">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="firstname">First Name</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="text" name="lastname" required id="lastname">
+                        <label for="lastname">Last Name</label>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" name="email" required id="email">
+                        <label for="email">Email</label>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" name="password" required id="password">
+                        <label for="password">Password</label>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" name="confirmpassword" required id="confirmpassword">
+                        <label for="confirmpassword">Confirm Password</label>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    
+                    
+                    
+                    <button class="btn-submit" type="submit">Signup</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

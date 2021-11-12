@@ -1,0 +1,43 @@
+@import 'default';
+@import 'container';
+@import 'form';
+@import 'nav';
+
+
+@media screen and (min-width:768px) {
+    main{
+        display: flex;
+        min-height: 80vh;
+    
+        .left{
+            flex: 0 0 50%;
+            padding-right: 3rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    
+        .right{
+            flex: 0 0 50%;
+            display: flex;
+            align-items: center;
+    
+        }
+    
+    }
+}
+
+
+@media screen and (max-width:778px) {
+    .left{
+        .login-desc{
+            h1{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+

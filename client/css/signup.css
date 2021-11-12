@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.5;
+  padding: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+  color: #000000;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.disabled {
+  background-color: #858585 !important;
+  cursor: no-drop !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.font-sm {
+  font-size: 0.8rem;
+}
+
+.font-reg {
+  font-size: 1rem;
+}
+
+.font-lg {
+  font-size: 1.2rem;
+}
+
+.font-xl {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .desktop {
+    display: none;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 96%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1620px) {
+  .container {
+    width: 75%;
+  }
+}
+.input-group {
+  position: relative;
+  margin: 40px 0 20px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #25deff;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 415px;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #25deff;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* animations */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #25deff;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #25deff;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #25deff;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+.btn-submit {
+  width: 400px;
+  border: none;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  background-color: #b90404;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .left, .right {
+    padding: 1rem;
+  }
+
+  .left .signup-desc h1 {
+    font-size: 1.5rem;
+  }
+  .left .signup-desc p {
+    font-size: 0.8rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .bar {
+    width: 100%;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  padding-left: 1rem;
+}
+header a:active, header a:visited {
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 12px 32px 0px #ffffff, 0 5px 3px -3px rgba(0, 0, 0, 0.43);
+}
+nav .nav-left {
+  display: flex;
+  align-items: center;
+}
+nav .nav-left ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+nav .nav-left ul .brand-logo {
+  width: 10rem;
+}
+nav .nav-left ul .nav-desktop {
+  padding-left: 2rem;
+}
+nav .nav-right {
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+  background-color: rgba(177, 177, 177, 0.575);
+  padding: 1.5rem 2rem;
+}
+nav .nav-right .cart-logo {
+  width: 1.5rem;
+  color: red;
+  padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    display: none;
+  }
+
+  nav .nav-left ul .brand-logo {
+    width: 80px;
+  }
+  nav .nav-left ul .nav-desktop {
+    display: none;
+  }
+  nav .nav-right {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+  }
+  main .left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem 3rem;
+  }
+  main .right {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=signup.css.map */
