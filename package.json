@@ -4,8 +4,9 @@
   "description": "This is a shopping cart coding exercise",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel client/html/index.html",
-    "sass": "sass client/sass/styles.scss:client/css/styles.css client/sass/products.scss:client/css/products.css client/sass/login.scss:client/css/login.css client/sass/signup.scss:client/css/signup.css --watch",
+    "cleanup": "rm -rf .cache dist",
+    "dev": "parcel .src/html/index.html",
+    "sass": "sass src/sass/styles.scss:src/css/styles.css src/sass/products.scss:src/css/products.css src/sass/login.scss:src/css/login.css src/sass/signup.scss:src/css/signup.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "canned -p 5000 ./server"
   },
@@ -15,7 +16,7 @@
     "canned": "^0.3.12"
   },
   "devDependencies": {
-    "parcel": "^1.12.3",
+    "parcel": "^1.12.4",
     "sass": "^1.43.4"
   }
 }
